@@ -1,342 +1,129 @@
+# Golak
 
-# **FINTRACK**
-
-<br/>
-
-# **Project Summary:**
-- A progressive web application
-- Assist users in managing their personal finances
-- Allows users to customize their expense categories
-- Also Tracks users’ multiple bank accounts on different expense categories and visualize them in charts.
-- The account transactions(income/expenses) are fetched from a Mock API working as a Bank.
-
-<br/>
-<br/>
-
-# **Tech Stack:**
-### **Backend**
-- Java 17
-- SpringBoot Framework
-
-### **Frontend**
-- Node 18.15.0
-- ReactJS
-
-### **Database**
-- MySQL
-
-<br/>
-<br/>
-
-# **Implemented set of features:**
-
-| Features                                                    | Status   |
-|-------------------------------------------------------------|----------|
-| User Authentication                                         | ACHIEVED |
-| Feature to add User Accounts, Incomes, Expenses, Categories | ACHIEVED |
-| Visualizing Expenses                                        | ACHIEVED |
-| Mock Bank API (Implemented after Mid-Term)                  | ACHIEVED |
-| Integration Tests                                           | ACHIEVED |
-| CI/CD Pipeline                                              | ACHIEVED |
-
-<br/>
-<br/>
-
-# **DEPENDENCIES**
-## **Frontend**
-
-The following dependencies are required to run this project:
-
-| Dependency                   | Version   |
-|------------------------------|-----------|
-| @emotion/react               | ^11.10.6 |
-| @emotion/styled              | ^11.10.6 |
-| @mui/icons-material          | ^5.11.9   |
-| @mui/material                | ^5.11.10  |
-| @mui/system                  | ^5.11.12 |
-| @testing-library/jest-dom    | ^5.16.5  |
-| @testing-library/react       | ^13.4.0   |
-| @testing-library/user-event | ^14.4.3  |
-| axios                        | ^1.3.3    |
-| bcryptjs                     | ^2.4.3    |
-| bootstrap                    | ^5.2.3    |
-| buffer                       | ^6.0.3    |
-| chart.js                     | ^4.2.1    |
-| chartjs-plugin-datalabels    | ^2.2.0    |
-| classnames                   | ^2.3.2    |
-| crypto                       | npm:crypto-browserify |
-| crypto-browserify            | 3.12.0   |
-| js-cookie                    | ^3.0.1    |
-| lodash                       | ^4.17.21 |
-| react                        | ^18.2.0  |
-| react-bootstrap              | ^2.7.1    |
-| react-chartjs-2              | ^5.2.0    |
-| react-dom                    | ^18.2.0  |
-| react-redux                  | ^8.0.5   |
-| react-router                 | ^6.8.1   |
-| react-router-dom             | ^6.8.1   |
-| react-scripts                | 5.0.1    |
-| redux                        | ^4.2.1   |
-| redux-logger                 | ^3.0.6   |
-| redux-persist                | ^6.0.0   |
-| redux-thunk                  | ^2.4.2   |
-| stream                       | npm:stream-browserify |
-| web-vitals                   | ^3.1.1   |
-
-
-## **Backend**
-
-Include all these dependencies in your pom.xml file
-
-| Dependency                   | Version       |
-| ---------------------------- | ------------- |
-| spring-boot-starter-web      |               |
-| spring-boot-starter-web-services |             |
-| spring-boot-starter-data-jpa | 3.0.2         |
-| spring-boot-devtools         |               |
-| spring-boot-configuration-processor |       |
-| spring-boot-starter-test     |               |
-| spring-boot-starter-security |               |
-| spring-boot-starter-oauth2-resource-server | 3.0.2 |
-| spring-boot-starter-validation |             |
-| jaxb-api                      | 2.2.7        |
-| jaxb-impl                     | 2.2.5-b10    |
-| jjwt                          | 0.9.1        |
-| hibernate-core                | 6.1.6.Final  |
-| hibernate-entitymanager       | 5.6.15.Final |
-| hibernate-validator           | 5.4.1.Final  |
-| mysql-connector-java          | 5.1.26       |
-| validation-api                | 2.0.1.Final  |
-| jakarta.persistence-api       | 3.1.0        |
-| spring-boot-starter-jdbc      | 3.0.2        |
-| lombok                        |               |
-| junit                         | 4.12         |
-| spring-security-test          | 6.0.2        |
+**Revolutionizing Traditional Money Circles**
 
-<br/>
-<br/>
+## Description
 
-# **BUILD INSTRUCTIONS**
-1. First run the backend using following steps from the project root folder:
+Golak is an innovative mobile application designed to digitalize traditional money circles, also known as "kametis," "chit funds," "ekub," or "susus." Rooted in centuries-old customs from diverse non-western cultures, the app modernizes these offline financial networks, offering a reliable, digital, and convenient platform for members to save, support each other, and achieve financial goals.
 
-    ```
-    > cd backend
-    # generate jar file for the backend
-    > mvn clean package spring-boot:repackage -DskipTests=true
-    # run the jar file
-    > java -jar ./target/backend-0.0.1-SNAPSHOT.jar -Dspring.datasource.url=<database_url> -Dspring.datasource.username=<database_username> -Dspring.datasource.password=<database_password>
-    ```
-    Backend service will start running on http://localhost:8080
+## What the Product is All About? The Key Features and Stuff
 
-    Note: database url looks like: jdbc:mysql://<domain_name>:3306/<database_name>
+Golak aims to bring the age-old practice of community savings into the digital age, providing a seamless experience for users and administrators alike. The app includes a user-friendly interface with features designed to enhance transparency, security, and convenience for all participants.
 
-2. Run the frontend service using following steps from the project root folder:
+### User App Features
 
-    1. create .env file same as [.env.sample](./frontend/.env.sample) under [frontend](/frontend/) and provide base url of the backend service
-        Note: For localhost the base url will be http://localhost:8000 
-    2. run the following code:
-        
-        ```
-        > cd ./frontend
-        > npm install
-        > npm start
-        ```
-    
-    Note: The frontend service will start running on http://localhost:3000
+- **User Authentication:**  
+  Ensures secure access to the app, with two-factor authentication adding an extra layer of security for users.
 
-<br/>
-<br/>
+- **User Profile:**  
+  Contains personal information, recent activities, and contact data.
 
-# **DEPLOYMENT INSTRUCTIONS**
+- **Dashboard:**  
+  Displays information on all circles, including upcoming payouts and payments.
 
-`build-backend` and `build-frontend` jobs in [.gitlab-ci.yml](.gitlab-ci.yml) generates all the artifacts needed to deploy the backend and frontend
+- **Circle Dashboard:**  
+  A centralized view of all circles the user is part of, displaying critical information such as minimum contribution, contribution type, total amount, number of participants, start date, and end date.
 
-* Download the artifacts of `build-backend` job
-* The `.jar` to run the backend service is saved under `backend/target/backend-0.0.1-SNAPSHOT.jar` path in the artifact
-* Upload the `.jar` file on the server and run, 
+- **Golak Ledger:**  
+  A comprehensive record of all transactions within a circle.
 
-    ```
-    > java -jar ./target/backend-0.0.1-SNAPSHOT.jar -Dspring.datasource.url=<database_url> -Dspring.datasource.username=<database_username> -Dspring.datasource.password=<database_password>
-    ```
+- **Create New Circle:**  
+  Allows users to create new circles by specifying the circle name, minimum contribution, total amount, number of participants, start date, and end date.
 
-* Download the artifacts of `build-frontend` job
-* The `build` files to run the frontend service is saved at `frontend` path in the artifact
-* Upload entire `build` folder to the server and run,
+- **Invite People:**  
+  Facilitates inviting new members to join a circle.
 
-    ```
-    > serve -s build
-    ```
+- **Manage Circles:**  
+  Provides tools to manage existing circles efficiently.
 
-**Note**: The build artifact for the frontend service is only configured to call the backend service running at http://172.17.1.244:8080 (network address of the deployment server). If the backend service is running at different ip then change `BACKEND_API_URL`
-variable in the Gitlab CI/CD configurations. The resolution of the limitation is to assign domain name to the backend service and provide that as the value of `BACKEND_API_URL` environment variable in GitLab CI/CD configuration.
+- **Round Stats:**  
+  Tracks statistics for each round of contributions.
 
+### Admin Web Portal Features
 
-<br/>
-<br/>
+- **Admin Dashboard:**  
+  Offers insights into the number of users, total amount facilitated, total completed payments, total payouts, and circle management.
 
-# **GitLab Jobs**
-* `build-frontend`: Builds deployment artifacts for the frontend service
-* `build-backend`: Builds deployment artifacts for the backend service
-* `test`: Run all the unit tests and integration test in the backend and generates **Jacoco** report
-* `smell-check`: Run the Designite tools and generates artifacts of smell reports
+- **Approval Mechanism:**  
+  Allows admins to review and verify details of circles and user requests before granting access.
 
-<br/>
-<br/>
+- **Profile:**  
+  Manages admin profile information.
 
-# **USAGE SCENARIO**
-Following are the usage scenarios covering all the features implemented in this project:
+- **Circle Management:**  
+  Tools for overseeing all circles within the app.
 
-<br/>
+- **Users Approval:**  
+  Streamlines the process of approving new users.
 
-## **Authentication Workflow**
-User will be landed on the **Login** page when they visit the FINTRACK website.
+- **App User Management:**  
+  Comprehensive management of app users.
 
-![Landing page](/Resources/Screenshots/login.png)
+- **Circle Dashboard:**  
+  Centralized view for managing circles.
 
+- **Circles List:**  
+  A list of all circles within the app.
 
-<br/>
+- **Report Centre:**  
+  Generates reports on all users, inactive users, all circles, inactive circles, payment data, payout data, all user data, and circle reports.
 
-To signup, the user can click on the **Sign up** button that is on the top-right corner of the screen. The Signup button will redirect the user to the **Sign Up** page.
+## Integrations and Tech Stack
 
-![Signup](/Resources/Screenshots/signup.png)
+Golak was developed using a modern tech stack to ensure scalability, security, and performance. Key integrations and technologies used include:
 
+- **Frontend:** React JS
+- **Backend:** Java Spring Boot
+- **Database:** MySQL
 
-The user can fill out the details of the signup form to signup for the website.
+## My Contributions
 
-![Signup form filled](/Resources/Screenshots/correct_password_signup.png)
+As a key developer on the Golak project, I played a significant role in various aspects of the project's development, including:
 
-There are also validations added for Password and Confirm password and until password and confirm password do not match, the signup button will be inactive.
+- **Feature Development:**  
+  Implemented critical features such as the Circle Stats Dashboard, Money Circle Ledger, and Round Stats for the user app.
 
-![Signup password not matching](/Resources/Screenshots/incorrect_password_signup.png)
+- **User Authentication:**  
+  Developed secure user authentication mechanisms to ensure data privacy and security.
 
-After, the signup is successful, the user will be redirected to the **Login** page to login into the website after signup.
+- **Admin Portal Development:**  
+  Built and optimized the Admin Dashboard, Circle Management, and Report Centre functionalities.
 
-![Login popup](/Resources/Screenshots/login_with_creds.png)
+- **API Integration:**  
+  Integrated third-party services like Stripe for seamless payment processing.
 
-After successful Login process, the user will be redirected to the **Dashboard** page.
+- **Database Management:**  
+  Designed and maintained the MongoDB database schema to support efficient data retrieval and storage.
 
-<br/>
+- **User Interface:**  
+  Collaborated with the design team to create an intuitive and user-friendly interface.
 
-## **Dashboard Module**
-The user will be landed to the Dashboard page where all the charts - Account balance, Income, Expense and Category, are displayed for the user to help visualize all the transactions that have occurred.
+## The Impact that I Created as a Developer
 
-![Dashboard](/Resources/Screenshots/dashboard_all.png)
-![Dashboard chart](/Resources/Screenshots/chart_example.png)
+My contributions to the Golak project had a significant impact on its success, including:
 
-The user is provided with 2 options for chart display - all, last 15 days on the bottom of the page.
-![Dashboard](/Resources/Screenshots/dashboard_all.png)
-![Dashboard](/Resources/Screenshots/dashboard_last_15.png)
+- **Enhanced User Experience:**  
+  The intuitive interface and robust features significantly improved user engagement and satisfaction.
 
-<br/>
+- **Increased Security:**  
+  Implementing secure authentication and data management practices ensured user data protection and trust in the app.
 
-## **SideBar Menu**
-On the top-left corner there is a Menu option which opens a **Sidebar Menu** for the user to navigate through the website.
+- **Streamlined Operations:**  
+  The admin web portal provided administrators with powerful tools to manage circles and users efficiently, reducing administrative overhead.
 
-![Sidebar menu](/Resources/Screenshots/sidebar_menu.png)
+- **Scalability:**  
+  The modern tech stack and cloud infrastructure ensured that the app could scale to accommodate a growing user base without compromising performance.
 
-<br/>
+- **Financial Inclusion:**  
+  By digitalizing traditional money circles, the app facilitated financial inclusion for users from diverse cultural backgrounds, empowering them to achieve their financial goals.
 
-## **Account Module**
-When the user selects the **Account** option from the Sidebar menu, the user is redirected to the Account page. If the user is a new user, and hasn't added any accounts yet, then the account list will be empty.
+- **Tracking and Reporting:**  
+  Offered detailed tracking and reporting features to monitor group performance and individual contributions.
 
-![Account page](/Resources/Screenshots/account_before.png)
+- **Savings Culture:**  
+  Promoted a culture of saving and financial responsibility, contributing to overall financial stability.
 
-The user can add a Account by clicking on the *Add Account* button that is located at the top-right corner and a pop will be opened asking for the account details.
+- **Risk Mitigation:**  
+  Helped users build emergency funds and mitigate financial risks.
 
-![Account popup](/Resources/Screenshots/add_account_with_data.png)
-![add account validation](/Resources/Screenshots/add_account_validation.png)
-
-
-On clicking the **Add** button on the Add account popup, the account details will be saved in the Database and a toaster notification saying the same will be displayed for the user and will be reflected in the account list as well.
-
-![account added successfully notification](/Resources/Screenshots/account_added_successfully.png)
-
-If the user wants to edit Account details they can edit it by clicking on the *edit* button.
-
-![edit account popup](/Resources/Screenshots/edit_account_popup.png)
-
-After making the necessary changes, the user can click on the *Save* button to update the account details which will be reflected in the list and user will receive a notification.
-
-![edit account successfully](/Resources/Screenshots/edit_account_successful.png)
-
-<br/>
-
-## **Transaction Module**
-
-When the user selects the Transaction option from the sidebar menu, they are redirected to the Transaction page.
-
-The Transaction page essentially lists two types of transactions - Expense and Income. By default, the Expense tab is selected to list out all the expenses. This transactions are gathered using two approaches - Bank transactions and user's manually added transactions.
-
-![transaction page](/Resources/Screenshots/transactions_list_all.png)
-
-At the top-left corner there is a dropdown, that has all the accounts that the user has added. 
-
-![account dropdown](/Resources/Screenshots/transactions_account_drpdwn.png)
-
-By selecting a particular account, the expenses occurred from that account will be listed out.
-
-![transaction for particular account](/Resources/Screenshots/transactions_list_selected_account_expense.png)
-![transaction for particular account](/Resources/Screenshots/transactions_list_selected_account_income.png)
-
-The user can add, update, delete any transactions they want.
-
-**ADD TRANSACTION**
-
-To add a new transaction, the user can click on the *Add Transaction* button located at the top-right corner and a popup will open up.
-
-![new transaction popup](/Resources/Screenshots/add_transaction_expense_before.png)
-
-**EXPENSE**
-
-![new transaction popup](/Resources/Screenshots/add_transaction_expense_select_account_drpdwn.png)
-
-The user can also select a category for the transaction and also add a new category while adding a transaction.
-
-![category dropdown](/Resources/Screenshots/add_transaction_expense_category_drpdwn.png)
-![add category popup](/Resources/Screenshots/add_category.png)
-
-<br/>
-
-![add transaction calender](/Resources/Screenshots/add_transaction_expense_calender.png)
-
-On clicking the **Add** button, the transaction will be saved, reflected in the list and a notification will be received by the user.
-
-![transaction added successfully](/Resources/Screenshots/add_transaction_expense_successfull.png)
-
-<br/>
-
-**INCOME**
-
-![add income popup](/Resources/Screenshots/add_transaction_income_popup.png)
-
-![add income filled data](/Resources/Screenshots/add_transction_income.png)
-
-![add income validation](/Resources/Screenshots/add_transaction_income_validation.png)
-
-<br/>
-
-**EDIT TRANSACTION**
-
-When the user wants to edit a transaction, they can edit it by clicking the edit button and make the required changes and click on *Save* button. On a successful save, a notification will be received by the user.
-
-![edit transaction expense](/Resources/Screenshots/edit_transaction_expense_popup.png)
-![edit transaction expense](/Resources/Screenshots/edit_transaction_income_popup.png)
-
-<br/>
-
-![edit transaction expense success](/Resources/Screenshots/edit_transaction_expense_successfull.png)
-![edit transaction income success](/Resources/Screenshots/edit_transaction_income_success.png)
-
-<br/>
-
-**DELETE TRANSACTION**
-
-When the user wants to delete a transaction, they can delete it by clicking the delete button. On a successful delete, a notification will be received by the user.
-
-![delete expense success](/Resources/Screenshots/delete_expense.png)
-![delete income success](/Resources/Screenshots/delete_income.png)
-
-<br/>
-<br/>
-
-**Deployed at**: http://172.17.1.244:3000/ (require dal network/vpn)
+---
