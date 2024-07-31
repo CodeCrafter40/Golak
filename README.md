@@ -126,4 +126,8 @@ My contributions to the Golak project had a significant impact on its success, i
 - **Risk Mitigation:**  
   Helped users build emergency funds and mitigate financial risks.
 
+##: Sanpshots
+![Golak Web Admin 2](https://github.com/user-attachments/assets/dabad1eb-07b0-407d-ad7f-65cc9ec542bb)
+
+
 ---
