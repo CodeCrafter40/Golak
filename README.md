@@ -84,6 +84,7 @@ Golak was developed using a modern tech stack to ensure scalability, security, a
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-blue)
 
 
+
 - **Frontend:** React JS
 - **Backend:** Java Spring Boot
 - **Database:** MySQL
