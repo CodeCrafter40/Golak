@@ -72,6 +72,18 @@ Golak aims to bring the age-old practice of community savings into the digital a
 
 Golak was developed using a modern tech stack to ensure scalability, security, and performance. Key integrations and technologies used include:
 
+## Tech Stack
+
+![React](https://img.shields.io/badge/React-18.2.0-blueviolet)
+![HTML](https://img.shields.io/badge/HTML-5.2-orange)
+![CSS](https://img.shields.io/badge/CSS-3.0-blue)
+![Java](https://img.shields.io/badge/Java-17.0.2-blue)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.6.6-brightgreen)
+![MySQL](https://img.shields.io/badge/MySQL-8.0.28-orange)
+![Docker](https://img.shields.io/badge/Docker-20.10.12-lightblue)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-blue)
+
+
 - **Frontend:** React JS
 - **Backend:** Java Spring Boot
 - **Database:** MySQL
